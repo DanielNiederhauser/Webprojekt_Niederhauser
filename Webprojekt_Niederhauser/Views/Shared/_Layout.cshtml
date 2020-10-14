@@ -8,9 +8,30 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <div id="container">
+        <header>
+            Kopfgereich
+        </header>
+        <main>
+            <nav>
+                <partial name="Navigation" />
+            </nav>
+            <content>
+                @*an der Stelle von RenderBody() wird die aktuell aufgerufene View angezeigt*@
+                @RenderBody()
 
-            @RenderBody()
-       
+            </content>
+            <aside>
+                Seitenbereich
+            </aside>
+        </main>
+        <footer>
+
+            <partial name="Navigation" />
+
+        </footer>
+    </div>
+
 
 
 
