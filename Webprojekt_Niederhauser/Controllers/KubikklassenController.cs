@@ -6,21 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Webprojekt_Niederhauser.Controllers
 {
-    public class UserController : Controller
+    public class KubikklassenController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Kubik50()
         {
             return View();
         }
-      
-        public IActionResult Login()
+        public IActionResult Kubik125()
         {
             return View();
         }
-        public IActionResult Registrierung()
-        {
-            return View();
-        }
-
     }
 }

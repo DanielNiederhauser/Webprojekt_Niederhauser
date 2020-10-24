@@ -6,24 +6,23 @@
     <title>@ViewData["Title"] - Webprojekt_Niederhauser</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
     <div id="container">
         <header>
-            Kopfgereich
+            
+            <partial name="Produktnavigation" />
         </header>
         <main>
-            <nav>
-                <partial name="Navigation" />
-            </nav>
+
             <content>
                 @*an der Stelle von RenderBody() wird die aktuell aufgerufene View angezeigt*@
                 @RenderBody()
+                
 
             </content>
-            <aside>
-                Seitenbereich
-            </aside>
+            
         </main>
         <footer>
 

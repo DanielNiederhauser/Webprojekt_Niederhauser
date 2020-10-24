@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\Bilder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Bilder\Rieju_MRT_50.jpg" />
   </ItemGroup>
 
   <ItemGroup>
