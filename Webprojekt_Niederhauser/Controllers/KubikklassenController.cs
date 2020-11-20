@@ -16,5 +16,9 @@ namespace Webprojekt_Niederhauser.Controllers
         {
             return View();
         }
+        public IActionResult KubikGroesser125()
+        {
+            return View();
+        }
     }
 }
