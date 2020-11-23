@@ -73,16 +73,15 @@ content {
     width: 95%;
     min-width: 450px;
     float: left;
-    min-height: 500px;
+    min-height: 900px;
     border-left: 1px solid #31dc15;
     border-right: 1px solid #31dc15;
     padding: 20px 10px 10px 10px;
 }
-main{
+main {
     width: 100%;
     float: right;
-    border-left:#ffd800;
-
+    border-left: #ffd800;
 }
 
 .dropbtn {
