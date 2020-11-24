@@ -8,6 +8,10 @@ namespace Webprojekt_Niederhauser.Controllers
 {
     public class MotorradController : Controller
     {
+        public IActionResult Rieju()
+        {
+            return View();
+        }
         public IActionResult Kawasaki125()
         {
             return View();
