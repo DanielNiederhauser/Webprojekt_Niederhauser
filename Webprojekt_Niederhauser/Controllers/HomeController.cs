@@ -23,7 +23,5 @@ namespace Webprojekt_Niederhauser.Controllers
         {
             return View();
         }
-        
-
     }
 }

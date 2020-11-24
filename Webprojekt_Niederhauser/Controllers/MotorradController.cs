@@ -1,29 +1,29 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Webprojekt_Niederhauser.Controllers
 {
-    public class KubikklassenController : Controller
+    public class MotorradController : Controller
     {
-        public IActionResult Kubik50()
+        public IActionResult Kawasaki125()
         {
             return View();
         }
-        public IActionResult Kubik125()
+        public IActionResult KTM125()
         {
             return View();
         }
-        public IActionResult KubikGroesser125()
-        {
-            return View();
-        }
-        public IActionResult Honda()
+        public IActionResult Honda125()
         {
             return View();
         }
 
+        public IActionResult KTMgroesser125()
+        {
+            return View();
+        }
     }
 }

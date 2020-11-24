@@ -27,26 +27,25 @@ footer {
     border-top: 1px solid #808080;
     text-align: right;
     padding-top: 10px;
+    color:green;
 }
     footer a:hover {
         text-decoration: none;
         font-weight: bold;
     }
-    footer ul {
-        list-style-type: none;
-        padding: 0px;
-        display: inline;
-    }
+
         footer ul li {
             display: inline;
             letter-spacing: 2px;
             padding: 10px;
+
         }
 .level1 {
+    font-size:110%;
+    padding-left:0px;
 }
 header{
     height:80px;
-    clear:both;
     text-align:left;
     padding:5px;
 }
@@ -73,15 +72,12 @@ content {
     width: 95%;
     min-width: 450px;
     float: left;
-    min-height: 900px;
-    border-left: 1px solid #31dc15;
-    border-right: 1px solid #31dc15;
+    min-height: 400px;
     padding: 20px 10px 10px 10px;
 }
 main {
-    width: 100%;
-    float: right;
-    border-left: #ffd800;
+    float: left;
+    color:blue;
 }
 
 .dropbtn {

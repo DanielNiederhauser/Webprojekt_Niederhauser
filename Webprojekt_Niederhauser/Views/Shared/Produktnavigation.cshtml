@@ -1,14 +1,4 @@
-﻿
-<div class="dropdown">
-    <button class="dropbtn">Impressum</button>
-    <div class="dropdown-content">
-        <a asp-controller="Kubikklassen" asp-action="Kubik50">alle 50ccm Marken</a>
-        <a asp-controller="Kubikklassen" asp-action="Kubik50">Rieju</a>
-        <a asp-controller="Kubikklassen" asp-action="Kubik50">Aprilia</a>
-    </div>
-</div>    
-
-<div class="dropdown">
+﻿<div class="dropdown">
         <button class="dropbtn">50 Kubik</button>
         <div class="dropdown-content">
             <a asp-controller="Kubikklassen" asp-action="Kubik50">alle 50ccm Marken</a>
@@ -21,14 +11,16 @@
     <button class="dropbtn">125 Kubik</button>
     <div class="dropdown-content">
         <a asp-controller="Kubikklassen" asp-action="Kubik125">alle 125ccm Marken</a>
-        <a asp-controller="Kubikklassen" asp-action="Kubik125">Kawasaki</a>
-        <a asp-controller="Kubikklassen" asp-action="Kubik125">KTM</a>
+        <a asp-controller="Motorrad" asp-action="Kawasaki125">Kawasaki</a>
+        <a asp-controller="Motorrad" asp-action="KTM125">KTM</a>
+        <a asp-controller="Motorrad" asp-action="Honda125">Honda</a>
+
     </div>
 </div>
 <div class="dropdown">
     <button class="dropbtn">über 125ccm</button>
     <div class="dropdown-content">
-        <a asp-controller="Kubikklassen" asp-action="Kubik125">450ccm</a>
+        <a asp-controller="Motorrad" asp-action="KTMgroesser125">KTM über 125 ccm</a>
         <a asp-controller="Kubikklassen" asp-action="Kubik125">700ccm</a>
         <a asp-controller="Kubikklassen" asp-action="Kubik125">>700ccm</a>
     </div>
