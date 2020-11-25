@@ -27,10 +27,13 @@ footer {
     border-top: 1px solid #808080;
     text-align: right;
     padding-top: 10px;
-    color:green;
+   /*color:orange; funktioniert nicht warum??*/
+    color:orange;
+    list-style:none;
 }
     footer a:hover {
         text-decoration: none;
+        color:green;
         font-weight: bold;
     }
 
@@ -43,10 +46,11 @@ footer {
 .ueberpunkt {
     font-size:110%;
 }
-header{
-    height:80px;
-    text-align:left;
-    padding:5px;
+header {
+    height: 80px;
+    text-align: left;
+    border-bottom: 1px solid #808080;
+    padding: 5px;
 }
     header a:hover {
         text-decoration: none;

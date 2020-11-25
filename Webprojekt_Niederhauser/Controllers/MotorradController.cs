@@ -12,6 +12,14 @@ namespace Webprojekt_Niederhauser.Controllers
         {
             return View();
         }
+        public IActionResult Aprilia()
+        {
+            return View();
+        }
+        public IActionResult Derbi()
+        {
+            return View();
+        }
         public IActionResult Kawasaki125()
         {
             return View();
