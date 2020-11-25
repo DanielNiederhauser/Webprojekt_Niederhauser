@@ -10,7 +10,7 @@ tfoot{
     font-weight: bold;
     background-color:#beb8b8;
 }
-#container {
+.container {
     width: 80%;
     min-width: 800px;
     margin: 0px auto;
