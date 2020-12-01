@@ -1,43 +1,58 @@
-﻿
+﻿@model Webprojekt_Niederhauser.Models.User
 @{
     ViewData["Title"] = "Registrierung";
 }
 
 <h1>Registrierung</h1>
-<br />
 
-<label for="firstname">Vorname</label>
 
-<input type="text" id="firstname" name="firstname" /><br>
+<form asp-controller="user" asp-action="Registrierung" method="post">
 
-<label for="lastname">Nachname</label>
-<input type="text" id="lastname" name="lastname" /><br>
-<span asp-validation-for="Nachname" class="text-danger" style="font-size:85%"></span>
-
-<label for="gender">Geschlecht</label>
-
-<div>
-    <input type="radio" id="gender" name="gender" value="male" />männlich
+    <label asp-for="Vorname">Vorname *</label>
     <br />
-    <input type="radio" id="gender" name="gender" value="female" />weiblich
+    <input asp-for="Vorname" />
     <br />
-    <input type="radio" id="gender" name="gender" value="notSpecified" />nicht bestimmt
+    <span asp-validation-for="Vorname" class="text-danger" style="font-size:85%"></span>
     <br />
-</div>
+
+    <label asp-for="Nachname">Nachname *</label>
+    <br />
+    <input asp-for="Nachname" />
+    <br />
+    <span asp-validation-for="Nachname" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="geschlecht">Geschlecht </label>
+    <br>
+    <select asp-for="geschlecht">
+        <option value="male">Mann</option>
+        <option value="female">Frau</option>
+        <option value="notSpecified">sonstiges</option>
+    </select>
+    <br />
+
+    <label asp-for="Geburtsdatum">Geburtsdatum *</label>
+    <br />
+    <input asp-for="Geburtsdatum" type="date" />
+    <span asp-validation-for="Geburtsdatum" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="Email">Email *</label>
+    <br />
+    <input asp-for="Email" />
+    <br />
+    <span asp-validation-for="Email" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="Passwort">Passwort *</label>
+    <br />
+    <input asp-for="Passwort" />
+    <br />
+    <span asp-validation-for="Passwort" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <input type="submit" value="Registrieren" />
+    <input type="reset" value="Zurücksetzen" />
+</form>
 
 
-<label for="date1">Geburtsdatum</label>
-<input type="date" name="date1" id="date1" /><br>
-
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
-<br />
-
-<label for="pasword">Passwort: </label>
-<input type="password" id="pasword" name="pasword" /><br>
-
-<label for="color1">Lieblingsfarbe</label>
-<input type="color" name="color1" id="color1" /><br>
-
-<input type="submit" value="Absenden" />
-<input type="reset" value="Zurücksetzen" />

@@ -1,7 +1,46 @@
-﻿    
+﻿@using Webprojekt_Niederhauser.Models;
 @{
     ViewData["Title"] = "index";
 }
 
-<h1>asdfkjlö</h1>
-
+<h1>USERINDEX</h1>
+@if (Model == null || Model.Count == 0)
+{
+    <p>
+        Es sind keine User im Shop vorhanden.
+    </p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <td colspan="6">Users</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Artikel-ID</td>
+                <td>Artikelname</td>
+                <td>Hersteller</td>
+                <td>Erscheinungsdatum</td>
+                <td>Preis</td>
+                <td>Kategorie</td>
+            </tr>
+            @foreach (User item in Model)
+            {
+                <tr>
+                    <td>@item.Vorname</td>
+                    <td>@item.Nachname</td>
+                    <td>@item.geschlecht</td>
+                    <td>@item.Geburtsdatum</td>
+                    <td>@item.Email</td>
+                    <td>@item.Passwort</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+        <td colspan="6">unsere besonderen User</td>
+        </tfoot>
+    </table>
+}

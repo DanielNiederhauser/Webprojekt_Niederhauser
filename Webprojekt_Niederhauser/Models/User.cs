@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace Webprojekt_Niederhauser.Models
 {
+    public enum Geschlecht
+    {
+        male, female, notSpecified
+    }
     public class User
     {
-        public enum Geschlecht
-        {
-            male, female, notSpecified
-        }
-
             public string Vorname { get; set; }
             public string Nachname { get; set; }
             public Geschlecht geschlecht { get; set; }
