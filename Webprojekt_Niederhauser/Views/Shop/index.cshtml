@@ -1,0 +1,47 @@
+﻿@using Webprojekt_Niederhauser.Models;
+@{
+    ViewData["Title"] = "index";
+}
+
+<h1>index</h1>
+
+@if (Model==null || Model.Count==0)
+{
+<p>
+    Es sind keine Artikel im Shop vorhanden.
+</p>
+}
+else
+{
+<table>
+    <thead>
+        <tr>
+            <td colspan="6">Shopartikel</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Artikel-ID</td>
+            <td>Artikelname</td>
+            <td>Hersteller</td>
+            <td>Baujahr</td>
+            <td>Preis</td>
+            <td>Kategorie</td>
+        </tr>
+        @foreach (Artikel item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Bezeichnung</td>
+                <td>@item.Marke</td>
+                <td>@item.Baujahr</td>
+                <td>@item.Preis</td>
+                <td>@item.Klasse</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+    <td colspan="6">unsere besonderen Artikel</td>
+    </tfoot>
+</table>
+}

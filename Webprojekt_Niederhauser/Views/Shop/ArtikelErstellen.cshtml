@@ -1,0 +1,48 @@
+﻿@model Webprojekt_Niederhauser.Models.Artikel
+
+@{
+    ViewData["Title"] = "ArtikelErstellen";
+}
+<form asp-controller="shop" asp-action="ArtikelErstellen" method="post">
+
+    <label asp-for="Bezeichnung">Artikelname *</label>
+    <br />
+    <input asp-for="Bezeichnung" />
+    <br />
+    <span asp-validation-for="Bezeichnung" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="Preis">Preis *</label>
+    <br />
+    <input asp-for="Preis" />
+    <br />
+    <span asp-validation-for="Preis" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="Marke">Marke</label>
+    <br />
+
+<textarea asp-for="Marke" rows="10" cols="40"></textarea>
+    <br />
+
+    <label asp-for="Baujahr">Baujahr *</label>
+    <br />
+    <input asp-for="Baujahr" type="date" />
+    <span asp-validation-for="Baujahr" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+    <label asp-for="Klasse">Klasse *</label>
+    <br>
+    <select asp-for="Klasse">
+        <option value="sonstiges">sonstige</option>
+        <option value="125ccm">125ccm</option>
+        <option value="50ccm">50ccm</option>
+    </select>
+    <br />
+    <span asp-validation-for="Klasse" class="text-danger" style="font-size:85%"></span>
+    <br />
+
+
+    <input type="submit" value="Artikel abspeichern" />
+    <input type="reset" value="abbrechen" />
+</form>

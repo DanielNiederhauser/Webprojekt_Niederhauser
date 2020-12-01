@@ -2,10 +2,14 @@
     font-size: 20px;
 }
 thead {
-    line-height: 200%;
+    line-height: 100%;
     text-align: center;
     font-weight: bold;
     background-color: #00ff90;
+}
+td{
+    padding-left:10px;
+    padding-right:10px;
 }
 tfoot{
     line-height: 100%;
@@ -30,17 +34,17 @@ footer {
     border-top: 1px solid #808080;
     text-align: right;
     padding-top: 10px;
-   /*color:orange; funktioniert nicht warum??*/
-    color:orange;
     list-style:none;
 }
+  footer a{
+      color: grey;
+  }
     footer a:hover {
         text-decoration: none;
         color:green;
         font-weight: bold;
     }
-
-        footer ul li {
+            footer ul li {
             display: inline;
             letter-spacing: 2px;
             padding: 10px;
