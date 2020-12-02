@@ -13,7 +13,7 @@ namespace Webprojekt_Niederhauser.Models
     {
             public string Vorname { get; set; }
             public string Nachname { get; set; }
-            public Geschlecht geschlecht { get; set; }
+            public Geschlecht Geschlecht { get; set; }
             public DateTime Geburtsdatum { get; set; }
             public string Email { get; set; }
 
@@ -25,14 +25,14 @@ namespace Webprojekt_Niederhauser.Models
             {
                 this.Vorname = vorname;
                 this.Nachname = nachname;
-                this.geschlecht = geschlecht;
+                this.Geschlecht = geschlecht;
                 this.Geburtsdatum = geburtsdatum;
                 this.Email = email;
                 this.Passwort = passwort;
             }
             public override string ToString()
             {
-                return this.Vorname + " " + this.Nachname + " " + this.geschlecht + " " + this.Geburtsdatum + " " + this.Email + " " + this.Passwort;
+                return this.Vorname + " " + this.Nachname + " " + this.Geschlecht + " " + this.Geburtsdatum + " " + this.Email + " " + this.Passwort;
             }
 
         

@@ -58,20 +58,20 @@ namespace Webprojekt_Niederhauser.Controllers
                 ModelState.AddModelError(nameof(u.Geburtsdatum), "Realistisches Geburtsdatum eingeben!");
 
             }
-            if ((u.geschlecht) == Geschlecht.notSpecified)
+            if ((u.Geschlecht) == Geschlecht.notSpecified)
             {
-                ModelState.AddModelError(nameof(u.geschlecht), "Geschlecht eingeben!");
+                ModelState.AddModelError(nameof(u.Geschlecht), "Geschlecht eingeben!");
 
             }
             if (u.Email == null || u.Email.Length < 10)
             {
                 ModelState.AddModelError(nameof(u.Email), "Die Email muss mindestens 10 Zeichen lang sein!");
             }
+            //bessere Überprüfung
             if (u.Passwort == null || u.Passwort.Length < 5)
             {
                 ModelState.AddModelError(nameof(u.Passwort), "Das Passwort muss mindestens 5 Zeichen lang sein!");
             }
-
         }
         private List<User> DemoUser()
         {

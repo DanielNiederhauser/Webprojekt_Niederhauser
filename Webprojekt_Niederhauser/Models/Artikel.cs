@@ -34,6 +34,5 @@ namespace Webprojekt_Niederhauser.Models
         {
             return this.ID + " " + this.Marke + " " + this.Bezeichnung + " " + this.Baujahr + " " + this.Preis + " Euro " + this.Klasse;
         }
-
     }
 }

@@ -22,8 +22,9 @@
     <label asp-for="Marke">Marke</label>
     <br />
 
-<textarea asp-for="Marke" rows="10" cols="40"></textarea>
+    <textarea asp-for="Marke" rows="2" cols="25"></textarea>
     <br />
+
 
     <label asp-for="Baujahr">Baujahr *</label>
     <br />
@@ -31,10 +32,11 @@
     <span asp-validation-for="Baujahr" class="text-danger" style="font-size:85%"></span>
     <br />
 
-    <label asp-for="Klasse">Klasse *</label>
+    <label asp-for="Klasse">Kubikklasse *</label>
     <br>
     <select asp-for="Klasse">
         <option value="sonstiges">sonstige</option>
+        <option value="ccmviel">>125ccm</option>
         <option value="125ccm">125ccm</option>
         <option value="50ccm">50ccm</option>
     </select>
